@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priyanka Patil — BSc IT Student</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0f62fe;
+      --muted:#6b7280;
+      --radius:14px;
+      --shadow: 0 6px 18px rgba(12, 15, 30, 0.08);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef3ff 100%);
+      color:#111827;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+    .card{
+      background:var(--card);
+      width:100%;
+      max-width:900px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:200px 1fr;
+      gap:24px;
+      padding:24px;
+      align-items:start;
+    }
+    .avatar{
+      width:160px;
+      height:160px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#7c3aed);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:34px;
+      box-shadow:0 6px 16px rgba(15,98,254,0.12);
+      flex-shrink:0;
+    }
+    .left{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+      align-items:center;
+      text-align:center;
+    }
+    h1{margin:0;font-size:20px}
+    .role{color:var(--muted);margin-top:4px;font-size:14px}
+    .contact{font-size:13px;color:var(--muted);line-height:1.5}
+    .btn{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:10px;
+      text-decoration:none;
+      font-size:13px;
+      margin-top:6px;
+      border:1px solid rgba(15,98,254,0.12);
+      color:var(--accent);
+      background:transparent;
+    }
+    .right{padding-right:8px}
+    .section{margin-bottom:14px}
+    .section h2{font-size:14px;margin:0 0 8px 0}
+    .summary{font-size:14px;color:#111827;line-height:1.6}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#f3f7ff;color:var(--accent);padding:6px 8px;border-radius:999px;font-size:13px}
+    .list{padding-left:18px;margin:6px 0}
+    .small{font-size:13px;color:var(--muted)}
+    footer.small{font-size:12px;color:var(--muted);margin-top:8px}
+    @media (max-width:720px){
+      .card{grid-template-columns:1fr;max-width:480px}
+      .left{flex-direction:row;align-items:center;text-align:left}
+      .avatar{width:88px;height:88px;font-size:20px}
+    }
+  </style>
+</head>
+<body>
+  <article class="card" aria-labelledby="profile-name">
+    <div class="left">
+      <div class="avatar" aria-hidden="true">PP</div>
+      <div>
+        <h1 id="profile-name">Priyanka Patil</h1>
+        <div class="role">BSc-IT Student | Aspiring Web Developer</div>
+        <div class="contact small">Email: priyanka.patil@example.com<br/>Phone: +91 98765 43210</div>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <section class="section">
+        <h2>Short Summary</h2>
+        <p class="summary">Motivated BSc-IT student with practical experience in HTML, CSS and basic JavaScript. Interested in building user-friendly web interfaces and learning full-stack development. Quick learner, team player, and eager to contribute to real-world projects.</p>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript (basic)</span>
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="small">BSc in Information Technology — XYZ College (Expected 2026)</div>
+      </section>
+
+      <section class="section">
+        <h2>Projects / Experience</h2>
+        <ul class="list small">
+          <li>Personal portfolio website (HTML & CSS)</li>
+          <li>Simple drawing web app for kids (class project)</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Connect</h2>
+        <div class="small">
+          LinkedIn: linkedin.com/in/priyanka-patil<br/>
+          GitHub: github.com/priyanka-patil
+        </div>
+      </section>
+
+      <footer class="small">Short professional profile — ready to print or include in applications.</footer>
+    </div>
+  </article>
+</body>
+</html>
